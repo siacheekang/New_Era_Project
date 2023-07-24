@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+   <meta charset="UTF-8">
+
+   <title>Chatbot System</title>
+   <!-- bootstrap design_css -->
+   <link rel="stylesheet" type="text/css" href="static/design_css/bootstrap.min.css">
+   <!-- style design_css -->
+   <link rel="stylesheet" type="text/css" href="static/design_css/style.css">
+
+</head>
+
+<body>
+   <!-- <div class="container"> -->
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="#"><img src="static/images/logo.png"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                     </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6" style="padding-left: 100px">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">Coffee is an exquisite and aromatic beverage, renowned for its captivating flavors and invigorating nature. Crafted from the roasted seeds of the Coffea plant, it delights with a diverse range of tastes, from nutty and chocolatey to fruity and earthy.</p>
+                     <p class="about_text">A steaming cup of coffee brings not only a comforting ritual but also a revitalizing boost, accompanied by its alluring aroma and rich brown hues. Whether savored black, with a touch of milk, or adorned with sweet additions, coffee is a cherished companion that brightens mornings, ignites conversations, and offers a blissful moment of indulgence amidst life's bustling rhythm.</p>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="static/images/about-img.png" style="height: 600px"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding margin_top90">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-6 text-center">
+                  <h3 class="useful_text">Menu</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="#">Home</a></li>
+
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 text-center">
+                  <h1 class="useful_text">Content</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">ADiscover a world of coffee perfection at our website, offering exquisite blends and brewing essentials.</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-6 text-center">
+                  <h1 class="useful_text">Contact Us</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address :
+                                 34C 3Th Floor Penang <br> Street Penang 10200 Malaysia </span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +01
+                                 1635362890</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email :
+                                 leezhenxian@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+   <!-- </div> -->
+      <div class="chatbox">
+            <div class="chatbox__support">
+               <div class="chatbox__header">
+                  <div class="chatbox__image--header">
+                     <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                        alt="image">
+                  </div>
+                  <div class="chatbox__content--header">
+                     <p class="chatbox__description--header">Hi, my customer. How can I help you?</p>
+                  </div>
+               </div>
+               <div class="chatbox__messages">
+                  <div></div>
+               </div>
+               <div class="chatbox__footer">
+                  <input type="text" id="messageInput" placeholder="Write a message...">
+                  <button class="chatbox__send--footer send__button" onclick="sendMessage()">Send</button>
+                  <button class="chatbox__microphone">
+                     <img src="{{ url_for('static', filename='images/microphone-icon.png') }}" style="height: 30px" />
+                  </button>
+
+
+               </div>
+            </div>
+            <div style="position: relative;">
+               <div class="chatbox__button ">
+                  <button><img src="{{ url_for('static', filename='images/chatbot-icon.png') }}" style="height: 50px" /></button>
+               </div>
+            </div>
+         </div>
+
+
+
+   <script>$SCRIPT_ROOT = {{ request.script_root | tojson }};
+   </script>
+
+   <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

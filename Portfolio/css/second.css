@@ -1,0 +1,669 @@
+.intro{
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.topbar{
+    background-color: #28323E;
+    color: white;
+    height: 200px;
+}
+
+.fullscreen{
+    display: flex;
+    max-width: 1500px;
+}
+
+#emptyl, #emptyr{
+    width: 2%;
+}
+p, li{
+    margin-top: 2%;
+    font-size: 26px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #EF6D58;
+    display: block;
+    transition: 0.3s;
+  }
+
+i{
+    color: white;
+}
+
+.icon{
+    display: none;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+#center{
+    width: 96%;
+}
+.introname{
+    display: flex;
+    align-items: center;
+    min-width: 45%;
+}
+
+#ownname{
+    width:100%;
+    text-align: center;
+    font-size: 33px;
+}
+
+img{
+    max-width: 385px;
+
+}
+
+#bread{
+    height: 210px;
+}
+#bakkut{
+    max-width: 400px;
+    height: 210px;
+}
+
+#noodlefry{
+    max-width: 320px;
+    height: 210px;
+}
+.backgroundcolor{
+    background-color: #F6FBF4;
+}
+.introstory{
+    
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.introme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #C3C9C3;
+}
+
+a:hover {
+    color: #EF6D58;
+}
+
+.home{
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.homepic{
+    
+    margin-left: 12%;
+    margin-right: 6%;
+    
+}
+
+.homestory{
+    width: 45%;
+    margin-left: 0%;
+    font-size: 26px;
+}
+
+.food{
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+
+.foodbox1, .foodbox2, .foodbox3{
+    text-align: center;
+    width: 27%;
+   margin: auto;
+    display: flex;
+    flex-direction: column;   
+}
+
+.hobbypicture{
+    display: flex;
+    margin-bottom: 2%;
+    background-image: url(../images/bubbble.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    
+
+}
+
+.hobby{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+    
+}
+
+.secondbottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titlebar{
+    text-align: center;
+    padding: 1%;
+    font-size: 50px;
+}
+
+.topbardetail{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#logo{
+    max-width: 50px ;
+}
+
+.three{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    width: 170px;
+    margin-left: 8%;
+}
+.title{
+    font-size: 35px;
+    color: #EF6D58;
+    padding: 4% 0% 0% 6%;
+}
+
+.title1{
+    font-size: 35px;
+    color: #EF6D58;
+    padding: 4% 0% 25% 6%;
+}
+
+.title2{
+    font-size: 30px;
+    color: #EF6D58;
+    margin-bottom: 2%;
+}
+
+#badpic{
+    max-width: 350px;
+   
+}
+
+#diaboloheight{
+    border-radius: 50px;
+    height: 580px;
+    width: 600px;
+}
+.diabolo{
+    margin-top: 7%;
+    margin-left: 15%;
+}
+
+.game{
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.kingpro{
+    margin-bottom: 4%;
+}
+
+#kingborder, #bookborder{
+    border-radius: 50px;
+    width: 380px;
+    height: 240px;
+
+}
+
+#bookborder{
+    height: 310px;
+}
+
+.contactbutton{
+    border: #F6FBF4 solid 1px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    margin-right: 8%;
+}
+
+#cont{
+    padding: 0px 10px 10px 10px;
+}
+
+.secondbottomspace{
+    margin-left: 12%;
+    margin-right: 15%;
+}
+
+#facebook{
+    border: #28323E solid  ;
+    border-radius: 95px;
+    background-color: #28323E;
+    max-height: 20px;
+    width: 27px;
+    text-align: center;
+}
+
+.bottomright{
+    display: flex;
+    justify-content: space-between;
+    min-width: 220px
+}
+
+#line3{
+    background-color: #3A3C56;
+    height: 1px;
+    margin: 20px 110px 2px 110px;
+}
+
+.margin{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+@media screen and (max-width:1128px){
+    .diabolo{
+        margin-left: 10%;
+    }
+
+    #diaboloheight{
+        border-radius: 50px;
+        height: 460px;
+        width: 480px;
+    }
+
+    #kingborder, #bookborder{
+        border-radius: 50px;
+        width: 280px;
+        height: 180px;
+    
+    }
+    
+    #bookborder{
+        height: 260px;
+    }
+}
+
+@media screen and (max-width:960px){
+
+    .diabolo{
+        margin-left: 8%;
+    }
+
+    .homepic{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width:920px){
+
+    #diaboloheight{
+        width: 450px;
+    }
+
+    img{
+        max-width: 360px;
+    }
+}
+
+@media screen and (max-width:850px){
+    img{
+        max-width: 315px;
+    }
+
+    .diabolo{
+        margin-left: 6%;
+    }
+}
+
+@media screen and (max-width:760px){
+
+    .diabolo{
+        margin-left: 7%;
+    }
+
+    img{
+        max-width: 320px;
+    }
+
+    #kingborder, #bookborder{
+        border-radius: 50px;
+        width: 200px;
+        height: 180px;
+    
+    }
+
+    #diaboloheight{
+        border-radius: 50px;
+        height: 460px;
+        width: 280px;
+    }
+
+    #bookborder{
+        height: 260px;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .homepic{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+    .homestory{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    .introstory{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .introname{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .hobbypicture{
+        display: flex;
+        margin-bottom: 2%;
+        background-image: none;
+        
+    
+    
+    }
+}
+
+@media screen and (max-width:630px){
+    #badpic{
+        max-width: 280px;
+    }
+
+    #diaboloheight{
+        max-width: 240px;
+    }
+    
+}
+
+@media screen and (max-width:580px){
+
+    #badpic{
+        max-width: 230px;
+    }
+
+    .title2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondbottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 200px;
+        margin: auto;
+    }
+
+    #facebook{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .bottomleft{
+        text-align: center;
+    }
+    .bottom{
+        display: flex;
+        justify-content: center;
+    }
+
+    .introstory{
+        font-size: 20px;
+    }
+
+    .homestory{
+        font-size: 20px;
+    }
+
+    .food{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    li{
+        font-size: 20px;
+        margin-bottom: 7%;
+    }
+
+    img{
+        max-width: 450px;
+    }
+
+    .clo{
+        min-width: 220px;
+       
+    }
+
+    .foodbox1, .foodbox2, .foodbox3{
+        justify-content: center;
+        width: 60%;
+        margin-left: 21%;
+    }
+
+    #kingborder, #bookborder{
+        border-radius: 50px;
+        width: 130px;
+        height: 240px;
+    
+    }
+
+    #diaboloheight{
+        border-radius: 50px;
+        height: 460px;
+        width: 200px;
+    }
+
+  
+
+    .margin{
+        margin-left: 0%;
+    }
+    
+    
+    .title2{
+        text-align: center;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:520px){
+    img{
+        max-width: 280px;
+    }
+
+    #badpic{
+        max-width: 220px;
+    }
+
+   
+}
+
+@media screen and (max-width:450px){
+
+    .title1{
+        font-size: 35px;
+        color: #EF6D58;
+        padding: 0% 0% 2% 6%;
+    }
+    #badpic{
+        max-width: 165px;
+    }
+    #kingborder, #bookborder{
+        border-radius: 50px;
+        width: 130px;
+        height: 180px;
+    
+    }
+
+    #diaboloheight{
+        border-radius: 50px;
+        height: 360px;
+        width: 130px;
+    }
+
+    li{
+        margin-bottom: 3%;
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width:368px){
+    #badpic{
+        max-width: 145px;
+    }
+
+    #diaboloheight{
+        border-radius: 50px;
+        height: 250px;
+        width: 100px;
+    }
+
+    #kingborder, #bookborder{
+        border-radius: 50px;
+        width: 100px;
+        height: 120px;
+    }
+
+    #bread{
+        min-width: 0px;
+        max-height: 110px;
+        max-width: 173px;
+    }
+
+    #bakkut{
+        min-width: 0px;
+        max-width: 173px;
+        max-height: 110px;
+    }
+
+    #noodlefry{
+        min-width: 0px;
+        max-width: 173px;
+        max-height: 110px;
+    }
+
+    li{
+        font-size: 14px;
+    }
+
+    img{
+        max-width: 190px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      display: block;
+      position: absolute;
+      right: 0;;
+    }
+
+    .three, .contactbutton{
+        display: none;
+    }
+
+    .icon{
+        width: 20px;
+        display: initial;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .three, .contactbutton{
+        display: none;
+    }
+    
+    .icon{
+        width: 20px;
+        display: initial;
+    }
+  }
